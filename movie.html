@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{margin: 0;padding: 0;box-sizing: border-box;}
+
+header{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  >h1{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 10vw;
+  }
+}
+
+.content-wrapper{
+  display:flex;
+  &:nth-of-type(even){
+    flex-direction:row-reverse;
+  }
+}
+
+.video-box{
+  width:60%;
+  height:100vh;
+  position:sticky;
+  >video{
+    object-fit:cover;
+    width:100%;
+    height:100%;
+  }
+}
+
+.txt-box{
+  width:40%;
+  padding:10% 5%;
+  >h2{
+    text-align:center;
+    margin-bottom:60px;
+  }
+  >p{
+    font-size:18px;
+    line-height:2.4;
+    margin-bottom:100px;
+  }
+}
+
+</style>
+
+</head>
+<body>
+  <header>
+    <h1>MOVIE</h1>
+  </header>
+
+  <main>
+    <div class="content-wrapper">
+      <div class="video-box">
+        <video src="./img/movie1.mp4" autoplay controls loop></video>
+      </div>
+
+      <div class="txt-box">
+        <h2>Lorem, ipsum.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur mollitia magnam laboriosam ab rem necessitatibus quam at vero ducimus labore.</p>
+      </div>
+    </div>
+
+
+    <div class="content-wrapper">
+      <div class="video-box">
+        <video src="./img/movie2.mp4" autoplay controls loop></video>
+      </div>
+
+      <div class="txt-box">
+        <h2>Lorem, ipsum.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur mollitia magnam laboriosam ab rem necessitatibus quam at vero ducimus labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. A at illum maiores, voluptatibus voluptas qui voluptatem provident eius nobis quaerat ipsa labore saepe cumque dignissimos ducimus suscipit magni? Omnis, sint?</p>
+      </div>
+    </div>
+
+
+
+</main>
+<footer>
+<p><small>&copy 2023 felica</small></p>
+</footer>
+
+
+</body>
+</html>
