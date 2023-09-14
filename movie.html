@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>動画のクリッピング</title>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
@@ -15,11 +15,18 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #f00;
   >h1{
     font-family: 'Bebas Neue', sans-serif;
     font-size: 10vw;
+    letter-spacing: 0.1em;
+    background: url(./img/mvgif.gif) no-repeat center center/cover;
+    -webkit-background-clip: text;
+    color: transparent;
   }
 }
+
+
 
 .content-wrapper{
   display:flex;
@@ -58,7 +65,7 @@ header{
 </head>
 <body>
   <header>
-    <h1>MOVIE</h1>
+    <h1>MOVIEVIDEO</h1>
   </header>
 
   <main>
